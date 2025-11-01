@@ -47,7 +47,6 @@ describe('Suíte de Testes Fraca para 50 Operações Aritméticas', () => {
   test('grausParaRadianos - deve converter graus para radianos', () => { expect(grausParaRadianos(180)).toBeCloseTo(Math.PI); });
   test('radianosParaGraus - deve converter radianos para graus', () => { expect(radianosParaGraus(Math.PI)).toBeCloseTo(180); });
 
-  // === Testes para o Bloco 4 (31-40) ===
   test('mdc - deve calcular o MDC de dois números', () => { expect(mdc(10, 5)).toBe(5); });
   test('mmc - deve calcular o MMC de dois números', () => { expect(mmc(10, 5)).toBe(10); });
   test('isPrimo - deve verificar que um número é primo', () => { expect(isPrimo(7)).toBe(true); });
