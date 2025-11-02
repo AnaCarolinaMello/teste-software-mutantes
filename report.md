@@ -1,9 +1,9 @@
 # RELATÓRIO DE TESTE DE MUTAÇÃO
 
-## Análise e Melhoria da Qualidade de Testes com StrykerJS
+## Análise e Melhoria da Qualidade de Testes com Stryker JS
 
 **Disciplina:** Teste de Software  
-**Trabalho:** Teste de Mutação com StrykerJS  
+**Trabalho:** Teste de Mutação com Stryker JS  
 **Aluno:** Ana Carolina Caldas de Mello
 **Matrícula:** 801198
 **Data:** Novembro de 2024
@@ -25,7 +25,7 @@ Na primeira execução do StrykerJS com `npx stryker run`, os resultados foram:
 
 - **Mutantes Gerados:** 213
 - **Mutantes Mortos:** 153
-- **Mutantes Não Dectetados:** 12
+- **Mutantes Não Detectados:** 12
 - **Mutantes que Deram Timeout:** 4
 - **Mutantes Sobreviventes:** 44
 - **Pontuação de Mutação Inicial:** 73.71%
@@ -139,7 +139,7 @@ test("celsiusParaFahrenheit - deve converter 100°C para 212°F", () => {
 
 Para "matar" os mutantes sobreviventes, implementamos uma estratégia sistemática:
 
-1. **Testes de Casos Limítrofes:** Adicionamos testes para valores extremos (0, 1, arrays vazios)
+1. **Testes de Borda:** Adicionamos testes para valores extremos (0, 1, arrays vazios)
 2. **Testes de Equivalência:** Verificamos comportamentos quando valores são iguais
 3. **Testes de Condições Booleanas:** Testamos tanto casos verdadeiros quanto falsos
 4. **Testes de Operadores:** Verificamos diferentes operadores de comparação
@@ -184,7 +184,7 @@ test("isEqual - deve retornar false para números diferentes", () => {
 Os novos testes foram projetados especificamente para:
 
 - **Cobrir casos não testados:** Identificamos lacunas nos testes originais
-- **Testar condições limítrofes:** Valores que frequentemente revelam bugs
+- **Testar valores de borda:** Valores que frequentemente revelam bugs
 - **Verificar operadores específicos:** Cada operador de comparação foi testado
 - **Validar tratamento de erros:** Casos que devem lançar exceções
 
@@ -225,9 +225,9 @@ Este trabalho demonstrou claramente que o **teste de mutação é uma ferramenta
 
 ### 5.2 Lições Aprendidas
 
-1. **Cobertura ≠ Qualidade:** Alta cobertura não garante testes eficazes
+1. **Cobertura não significa Qualidade:** Alta cobertura não garante testes eficazes
 2. **Mutantes como Guia:** Os mutantes sobreviventes apontam exatamente onde os testes são fracos
-3. **Casos Limítrofes são Críticos:** Muitos bugs ocorrem em condições extremas
+3. **Casos com Valores de Borda são Críticos:** Muitos bugs ocorrem em condições extremas
 4. **Testes Específicos são Necessários:** Cada comportamento deve ser explicitamente verificado
 
 ### 5.3 Impacto na Qualidade do Software
