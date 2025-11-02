@@ -92,7 +92,7 @@ function clamp(valor, min, max) {
 
 ![Mutação no clamp](img/clamp.png)
 
-**Por que sobreviveu:** O teste original `clamp(5, 0, 10)` não testava casos limítrofes onde `valor === min` ou `valor === max`. A mutação alteraria o comportamento nesses casos específicos.
+**Por que sobreviveu:** O teste original `clamp(5, 0, 10)` não testava casos extremos, onde `valor === min` ou `valor === max`. A mutação alteraria o comportamento nesses casos específicos.
 
 **Solução implementada:**
 
