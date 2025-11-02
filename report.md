@@ -1,4 +1,4 @@
-# RELATÓRIO DE TESTE DE MUTAÇÃO
+# Relatório de Teste de Mutação
 
 ## Análise e Melhoria da Qualidade de Testes com Stryker JS
 
@@ -10,7 +10,7 @@
 
 ---
 
-## 1. ANÁLISE INICIAL
+## 1. Análise Inicial
 
 ### 1.1 Cobertura de Código Inicial
 
@@ -38,7 +38,7 @@ A alta cobertura indicava que o código estava sendo executado, mas a baixa pont
 
 ---
 
-## 2. ANÁLISE DE MUTANTES CRÍTICOS
+## 2. Análise de Mutantes Críticos
 
 ### 2.1 Mutante Crítico 1: Operador de Comparação em `isMaiorQue`
 
@@ -133,7 +133,7 @@ test("celsiusParaFahrenheit - deve converter 100°C para 212°F", () => {
 
 ---
 
-## 3. SOLUÇÃO IMPLEMENTADA
+## 3. Solução Implementada
 
 ### 3.1 Estratégia de Melhoria
 
@@ -190,7 +190,7 @@ Os novos testes foram projetados especificamente para:
 
 ---
 
-## 4. RESULTADOS FINAIS
+## 4. Resultados Finais
 
 ### 4.1 Pontuação de Mutação Final
 
@@ -217,7 +217,7 @@ Após a implementação dos novos testes:
 
 ---
 
-## 5. CONCLUSÃO
+## 5. Conclusão
 
 ### 5.1 Importância do Teste de Mutação
 
