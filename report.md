@@ -42,20 +42,7 @@ A alta cobertura indicava que o código estava sendo executado, mas a baixa pont
 
 ### 2.1 Mutante Crítico 1: Operador de Comparação em `isMaiorQue`
 
-**Localização:** `src/operacoes.js`, linha 104  
-**Mutação:** `a > b` → `a >= b`
-
-```javascript
-// Código original
-function isMaiorQue(a, b) {
-  return a > b;
-}
-
-// Código mutado (sobreviveu)
-function isMaiorQue(a, b) {
-  return a >= b;
-}
-```
+**Localização:** `src/operacoes.js`, linha 104
 
 ![Mutação no maior](img/maior.png)
 
@@ -71,24 +58,7 @@ test("isMaiorQue - deve retornar false para números iguais", () => {
 
 ### 2.2 Mutante Crítico 2: Operador Aritmético em `clamp`
 
-**Localização:** `src/operacoes.js`, linhas 87-91  
-**Mutação:** `valor < min` → `valor <= min`
-
-```javascript
-// Código original
-function clamp(valor, min, max) {
-  if (valor < min) return min;
-  if (valor > max) return max;
-  return valor;
-}
-
-// Código mutado
-function clamp(valor, min, max) {
-  if (valor <= min) return min; // Mutação aqui
-  if (valor > max) return max;
-  return valor;
-}
-```
+**Localização:** `src/operacoes.js`, linhas 87-91
 
 ![Mutação no clamp](img/clamp.png)
 
@@ -105,19 +75,6 @@ test("clamp - deve retornar valor máximo quando acima do limite", () => {
 ### 2.3 Mutante Crítico 3: Operador Aritmético em `celsiusParaFahrenheit`
 
 **Localização:** `src/operacoes.js`, linha 93  
-**Mutação:** `celsius * 9/5` → `celsius / 9/5`
-
-```javascript
-// Código original
-function celsiusParaFahrenheit(celsius) {
-  return celsius * 9/5 + 32;
-}
-
-// Código mutado (sobreviveu)
-function celsiusParaFahrenheit(celsius) {
-  return celsius / 9/5 + 32;
-}
-```
 
 ![Mutação no celsius](img/celsiusParaFahrenheit.png)
 
